@@ -1,0 +1,118 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.subscriptionUpdates {
+  overflow: hidden;
+  background-color: "[theme:bodyBackground, default: #ffffff]";
+  color: "[theme:bodyText, default: #323130]";
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .titleBar {
+    background-color: "[theme:themePrimary, default: #0078d4]";
+    color: "[theme:white, default: #ffffff]";
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .description {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyText);
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; // Removing space between title and description
+    align-items: center;
+    width: 100%;
+  }
+
+  .notifications {
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 480px;
+
+    :global(.ms-MessageBar) {
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .details {
+    margin-bottom: 10px;
+
+    p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  }
+
+  .actionButton {
+    background-color: "[theme:themePrimary, default: #0078d4]";
+    color: "[theme:white, default: #ffffff]";
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: "[theme:themeDark, default: #005a9e]";
+    }
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}

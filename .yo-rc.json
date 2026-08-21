@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "SubscriptionUpdates",
+    "environment": "spo",
+    "packageManager": "npm",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "useGulp": false,
+    "componentType": "webpart",
+    "template": "react",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "20.12.2",
+    "sdksVersions": {},
+    "version": "1.22.0",
+    "libraryName": "subscription-updates",
+    "libraryId": "fc46a2ae-b291-4bb3-aeb2-485b27164f4c",
+    "solutionShortDescription": "SubscriptionUpdates description"
+  }
+}

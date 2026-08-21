@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "subscription-updates-client-side-solution",
+    "id": "fc46a2ae-b291-4bb3-aeb2-485b27164f4c",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "iconPath": "assets/icon-96.png",
+    "developer": {
+      "name": "Vishnu",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "GT012078178"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Efficiently manage and verify your topic subscriptions within SharePoint."
+      },
+      "longDescription": {
+        "default": "Feature-rich SPFx web part for user  to browse subscription topics, select preferences, and receive updates. Includes themed title bar, customizable labels, and granular typography controls."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "subscription-updates Feature",
+        "description": "The feature that activates elements of the subscription-updates solution.",
+        "id": "2073f39b-0ed0-4255-bba2-22b8be1fb457",
+        "version": "1.0.0.1"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/subscription-updates.sppkg"
+  }
+}
